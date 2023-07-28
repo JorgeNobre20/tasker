@@ -1,0 +1,91 @@
+:root{
+  --primary-color: #8000BC;
+  --disabled-link-color: #D795F7;
+  --active-nav-item-bg-color: #B148E3;
+  --light-color: #FFFFFF;
+  --title-color: #4C4A4A;
+  --button-bg-color: #C474EA;
+  --board-header-color: #938E8E;
+  --board-header-bg-color: #F6F6F6;
+  --to-do-color: #FFC700;
+  --doing-color: #0085FF;
+  --done-color: #2FCA3F;
+  --task-card-bg-color: #F6F6F6;
+  --dev-flag-color: #FF8A00;
+  --test-flag-color: #2FCA3F;
+  --task-card-title-color: #767676;
+  --task-card-username-color: #ADAAAA;
+  --danger-color: #ff0000;
+  --accent-color: #F6F6F6;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+input, select, button {
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+}
+
+select{
+  cursor: pointer;
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.icon-with-label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon-with-label svg{
+  height: 1rem;
+  width: auto;
+  margin-right: 0.6rem;
+}
+
+.icon-with-label span{
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  font-weight: medium;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+button.save-btn{
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+button.delete-btn{
+  background-color: var(--danger-color);
+  color: var(--light-color);
+}

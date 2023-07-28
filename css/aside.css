@@ -1,0 +1,94 @@
+aside{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+
+  width: 30%;
+  max-width: 220px;
+
+  background-color: var(--primary-color);
+  
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo{
+  height: 3rem;
+  width: auto;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+nav ul li{
+  margin-bottom: 1rem;
+  width: 90%;
+  border-radius: 2px;
+  color: var(--disabled-link-color);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+nav ul li a{
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  color: var(--disabled-link-color);
+  transition: all 0.5s;
+  width: 100%;
+}
+
+nav ul li svg{
+  height: 1rem;
+  width: auto;
+  margin-right: 0.5rem;
+  transition: all 0.5s;
+}
+
+nav ul li path{
+  fill: var(--disabled-link-color);
+  transition: all 0.5s;
+}
+
+nav ul li:hover {
+  background: var(--active-nav-item-bg-color);
+}
+
+nav ul li:hover path{
+  fill: var(--light-color);
+}
+
+nav ul li:hover a{
+  color: var(--light-color);
+}
+
+nav ul li.active{
+  background: var(--active-nav-item-bg-color);
+}
+
+nav ul li.active path{
+  fill: var(--light-color);
+}
+
+nav ul li.active a{
+  color: var(--light-color);
+}
+
+#asideFooter .icon-with-label.active span{
+  color: var(--light-color);
+}
+
+#asideFooter .icon-with-label.active path{
+  fill: var(--light-color);
+}
